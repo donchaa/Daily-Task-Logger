@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    main {
+      max-width: 700px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    main h1 {
+      color: #4caf50;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+
+    main p {
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+
+    main ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    main ul li {
+      margin-bottom: 0.6rem;
+      font-size: 1.05rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>About This App</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="tasks.html">Tasks</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h1>About This Project</h1>
+      <p>
+        This Daily Task Logger web app was created by <strong>Chantoan Ha</strong> for the INST377 class at the University of Maryland.
+      </p>
+      <p>
+        The purpose of this application is to allow users to log daily tasks, track their task entries, and visualize task frequency using a simple and responsive interface.
+      </p>
+      <p>The development process involved the following steps:</p>
+      <ul>
+        <li>Designing the frontend using HTML, CSS (Flexbox and Grid), and JavaScript</li>
+        <li>Connecting the app to a Supabase backend to store and retrieve tasks in real-time</li>
+        <li>Implementing Fetch API calls to insert, fetch, and delete tasks</li>
+        <li>Using Chart.js to visualize task logging patterns</li>
+        <li>Adding Toastify.js to provide user-friendly toast notifications for actions like task addition and deletion</li>
+        <li>Deploying the application publicly using Vercel</li>
+      </ul>
+      <p>
+        This app demonstrates the integration of frontend technologies with a modern backend-as-a-service platform to build a full-stack web application. The addition of Toastify enhances user experience by providing real-time, unobtrusive feedback when users interact with the app.
+      </p>
+    </section>
+  </main>
+</body>
+</html>

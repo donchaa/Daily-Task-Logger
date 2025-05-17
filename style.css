@@ -1,0 +1,106 @@
+/* Simple CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  /* margin and padding removed by reset */
+  line-height: 1.5;
+  color: #333;
+}
+
+header {
+  background: #4CAF50;
+  color: white;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px 2em;
+
+  /* Added flexbox for layout, vertical stack */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* space between form, list, chart */
+  max-width: 800px;
+  margin: 0 auto; /* center content horizontally */
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 0; /* spacing handled by gap on main */
+}
+
+form input[type="text"] {
+  flex-grow: 1;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 0 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
+}
+
+#taskList li {
+  background: white;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-left: 5px solid #4CAF50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#taskList li button {
+  background-color: #e74c3c;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+#taskList li button:hover {
+  background-color: #c0392b;
+}
+
+canvas#chart {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}

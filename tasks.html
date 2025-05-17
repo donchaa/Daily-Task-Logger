@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tasks</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Toastify CSS -->
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+  />
+</head>
+<body>
+  <header>
+    <h1>Log Your Tasks</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="tasks.html">Tasks</a>
+    </nav>
+  </header>
+  <main>
+    <form id="taskForm">
+      <input
+        type="text"
+        id="taskInput"
+        placeholder="Enter your task..."
+        required
+      />
+      <button type="submit">Add Task</button>
+    </form>
+    <ul id="taskList"></ul>
+    <canvas id="chart" width="400" height="200"></canvas>
+  </main>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Supabase JS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+
+  <!-- Toastify JS -->
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/toastify-js"
+  ></script>
+
+  <!-- Your Script -->
+  <script src="tasks.js"></script>
+</body>
+</html>
