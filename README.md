@@ -54,6 +54,7 @@ The app was developed to practice integrating front-end interfaces with a real-t
 - Tasks are stored in Supabase in real-time.
 - A bar chart shows how many tasks have been submitted.
 - Tasks can be deleted from the list, and changes are reflected both visually and in the database.
+- Toastify.js is used to provide elegant toast notifications that inform users immediately when tasks are added or deleted, improving user feedback and experience.
 
 ---
 
